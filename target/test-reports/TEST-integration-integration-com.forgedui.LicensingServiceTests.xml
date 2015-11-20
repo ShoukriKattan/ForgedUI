@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="shoukry-THINK" name="com.forgedui.LicensingServiceTests" tests="1" time="0.383" timestamp="2011-10-29T23:56:04">
+  <properties />
+  <testcase classname="com.forgedui.LicensingServiceTests" name="testSomething" time="0.372">
+    <failure message="junit.framework.AssertionFailedError" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError
+	at com.forgedui.LicensingServiceTests.testSomething(LicensingServiceTests.groovy:25)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+  <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+</testsuite>

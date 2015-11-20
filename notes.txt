@@ -1,0 +1,56 @@
+http://localhost:8080/ForgedUI/j_spring_openid_security_check?openid_identifier=https://www.google.com/accounts/o8/id
+
+http://localhost:8080/ForgedUI/j_spring_openid_security_check?openid_identifier=https://www.appdirect.com/openid/id
+
+Forwards to : 
+https://www.appdirect.com/openid/op?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.return_to=http%3A%2F%2Flocalhost%3A8080%2FForgedUI%2Fj_spring_openid_security_check&openid.realm=http%3A%2F%2Flocalhost%3A8080%2F&openid.assoc_handle=530783e4ad7e09b0&openid.mode=checkid_setup&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_request&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.if_available=email&openid.ext1.type.fullname=http%3A%2F%2Faxschema.org%2FnamePerson&openid.ext1.type.company=http%3A%2F%2Faxschema.org%2Fcompany%2Fname&openid.ext1.required=email%2Cfullname%2Ccompany
+
+openid.ns	http://specs.openid.net/auth/2.0
+openid.claimed_id	http://specs.openid.net/auth/2.0/identifier_select
+openid.identity	http://specs.openid.net/auth/2.0/identifier_select
+openid.return_to	http://localhost:8080/ForgedUI/j_spring_openid_security_check
+openid.realm	http://localhost:8080/
+openid.assoc_handle	530783e4ad7e09b0
+openid.mode	checkid_setup
+openid.ns.ext1	http://openid.net/srv/ax/1.0
+openid.ext1.mode	fetch_request
+openid.ext1.type.email	http://axschema.org/contact/email
+openid.ext1.if_available	email
+openid.ext1.type.fullname	http://axschema.org/namePerson
+openid.ext1.type.company	http://axschema.org/company/name
+openid.ext1.required	email,fullname,company
+
+
+This guy redirects nack to us : 
+Redirect to: http://localhost:8080/ForgedUI/j_spring_openid_security_check?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.op_endpoint=https%3A%2F%2Fwww.appdirect.com%2Fopenid%2Fop&openid.claimed_id=https%3A%2F%2Fwww.appdirect.com%2Fopenid%2Fid%2F1856a7bf-e6bf-4441-a471-9602277c5fd6&openid.response_nonce=2011-10-16T02%3A30%3A35Z40&openid.mode=id_res&openid.identity=https%3A%2F%2Fwww.appdirect.com%2Fopenid%2Fid%2F1856a7bf-e6bf-4441-a471-9602277c5fd6&openid.return_to=http%3A%2F%2Flocalhost%3A8080%2FForgedUI%2Fj_spring_openid_security_check&openid.assoc_handle=530783e4ad7e09b0&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.email%2Cext1.value.email%2Cext1.type.fullname%2Cext1.value.fullname%2Cext1.type.company%2Cext1.value.company&openid.sig=msycREF8yOPMUR8Hgu4u09hGEodFq6Bhe8B7ITYbZQg%3D&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=admin%40forgedui.com&openid.ext1.type.fullname=http%3A%2F%2Faxschema.org%2FnamePerson&openid.ext1.value.fullname=Shoukri+Kattan&openid.ext1.type.company=http%3A%2F%2Faxschema.org%2Fcompany%2Fname&openid.ext1.value.company=ForgedUI
+
+openid.ns	http://specs.openid.net/auth/2.0
+openid.op_endpoint	https://www.appdirect.com/openid/op
+openid.claimed_id	https://www.appdirect.com/openid/id/1856a7bf-e6bf-4441-a471-9602277c5fd6
+openid.response_nonce	2011-10-16T02:30:35Z40
+openid.mode	id_res
+openid.identity	https://www.appdirect.com/openid/id/1856a7bf-e6bf-4441-a471-9602277c5fd6
+openid.return_to	http://localhost:8080/ForgedUI/j_spring_openid_security_check
+openid.assoc_handle	530783e4ad7e09b0
+openid.signed	op_endpoint,claimed_id,identity,return_to,response_nonce,assoc_handle,ns.ext1,ext1.mode,ext1.type.email,ext1.value.email,ext1.type.fullname,ext1.value.fullname,ext1.type.company,ext1.value.company
+openid.sig	msycREF8yOPMUR8Hgu4u09hGEodFq6Bhe8B7ITYbZQg=
+openid.ns.ext1	http://openid.net/srv/ax/1.0
+openid.ext1.mode	fetch_response
+openid.ext1.type.email	http://axschema.org/contact/email
+openid.ext1.value.email	admin@forgedui.com
+openid.ext1.type.fullname	http://axschema.org/namePerson
+openid.ext1.value.fullname	Shoukri Kattan
+openid.ext1.type.company	http://axschema.org/company/name
+openid.ext1.value.company	ForgedUI
+
+
+insert into forgeduiproduct 
+( version , category , date_created , description , last_updated , name, num_users, product_id, pvt_description) VALUES
+ (0 , 'standard', now(), 'special package for bundle', now(), 'ForgedUI Bundle edition' , 1, 'single_usr_bundle','special pack for bundle');
+ 
+ 
+Go live list : 
+
+ How can we update product to one time + recurring, do we update or ADD
+ 
+ 

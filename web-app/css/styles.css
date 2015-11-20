@@ -1,0 +1,824 @@
+/* ------------------------- Css Reset -------------------------------*/
+
+html {margin:0;padding:0;border:0;}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {display:block;}
+body {line-height:1.5;background:white;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;float:none !important;}
+table, th, td {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+:focus {outline:0;}
+hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:.1em;border:none;}
+
+/*=============================  General Styles =============================*/
+.clear{
+	clear:both;
+}
+
+.hidden{
+	display:none;
+}
+
+.right{
+	float:right;
+}
+
+.left{
+	float:left;
+}
+
+.border{		/* border class for debugging*/
+	border:1px solid black;	
+}
+/* common padding  top*/
+.ptop_5{ padding-top:5px; }
+.ptop_10{ padding-top:10px; }
+.ptop_15{ padding-top:15px; }
+.ptop_20{ padding-top:20px; }
+.ptop_25{ padding-top:25px; }
+.ptop_30{ padding-top:30px; }
+.ptop_50{ padding-top:50px; }
+
+/* common margin  top*/
+.mtop_5{ margin-top:5px; }
+.mtop_10{ margin-top:10px; }
+.mtop_15{ margin-top:15px; }
+.mtop_20{ margin-top:20px; }
+.mtop_25{ margin-top:25px; }
+.mtop_30{ margin-top:30px; }
+.mtop_50{ margin-top:50px; }
+
+/* common padding  left*/
+.pleft_5{ padding-left:5px; }
+.pleft_10{ padding-left:10px; }
+.pleft_20{ padding-left:20px; }
+
+/* common padding  rigth*/
+.pright_5{ padding-right:5px; }
+.pright_10{ padding-right:10px; }
+.pright_20{ padding-right:20px; }
+
+
+/* columns */
+.one_half{ width:48%; }
+.one_third{ width:30.66%; }
+.two_third{ width:65.32%; }
+.one_fourth{ width:22%; }
+.one_fifth{ width:16.8%; }
+.three_fourth{width:74%;}
+.one_six{width:14.8%;}
+.three_six{width:43.4%;}
+.one_half,.one_third,.one_fourth, .three_fourth, .two_third, .one_six, .three_six, .one_fifth{
+	position:relative; margin-right:4%; float:left; text-align:left;
+}
+.last{ margin-right:0 !important; clear:right; }
+
+
+/*=============================  End General Styles =============================*/
+
+/*============================= Theme  Styles =============================*/
+
+body,a{
+	color:#797979;	/* regular */
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+a:hover{
+	color:#525252;
+}
+
+body{
+	background-color:#ffffff;
+	background-image:url('../images/body_grad.png');
+	background-repeat:repeat-x;
+}
+
+#container{
+	width:955px;
+	margin:0px auto;
+}
+
+.custom_left{		/* custom left text part layout */
+	width:700px;
+	float:left;
+}
+
+.text_top{
+	color:#b7beb9;
+}
+
+hr{
+	background:#d1dcd4;
+	clear:both;
+}
+
+.delimiter{
+	padding-top:23px;
+	padding-bottom:23px;
+	clear:both;
+}
+
+.color_green{
+	color:#0e8b4d;
+}
+
+.color_orange{
+	color:#ff9b00;
+}
+
+.color_strong{
+	color:#525252;	/* strong */
+}
+
+h1{
+	font-size:36px;
+	font-weight:bold;
+	line-height:1.1;
+}
+
+h3 {
+	font-size:14px; 
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+h2 {font-size:26px; line-height:26px;}
+h4 {font-size:14px; line-height:20px;}
+h5 {font-size:12px; line-height:18px;}
+h6 {font-size:10px; line-height:17px;}
+
+
+.space_link{	/* space between text and link */
+	display:block;
+	padding-top:7px;
+}
+
+.space_between_paragraphs{
+	padding-top:55px;
+}
+
+a.link_learn_more_green, a.link_learn_more_orange{
+	padding-right:7px;
+	text-decoration:none;
+	background-repeat:no-repeat;
+	background-position:right center;
+}
+
+a.link_learn_more_green:hover, a.link_learn_more_orange:hover{
+	text-decoration:underline;
+}
+
+a.link_learn_more_green{
+	color:#0e8b4d;
+	background-image:url('../images/green_tip.png');
+}
+
+a.link_learn_more_orange{
+	color:#ff9b00;
+	background-image:url('../images/orange_tip.png');
+}
+
+a.small_screenshot{
+	display:block;
+	background-image:url('../images/screenshot_frame.png');
+	background-repeat:no-repeat;
+	width:71px;
+	height:69px;
+}
+
+.small_screenshot img{
+	display:block;
+	margin:0px auto;
+	margin-top:5px;
+	width:59px;
+	height:46px;
+}
+
+.price{
+	font-size:24px;
+	font-weight:bold;
+}
+
+.price_p{
+	display:inline;
+	clear:none;
+	font-size:16px;
+	font-weight:bold;
+	position:relative;
+	bottom:5px;
+}
+
+
+
+/*------------------- Table Features -----------------------*/
+
+table.table_features{
+	border-collapse:collapse;
+	background-color:#f8f8f8;
+}
+
+table.table_features tr td{
+	border:1px solid #e5e5e5;
+	width:147px;
+	height:45px;	
+	vertical-align:top;	
+}
+
+table.table_features tr td img{
+	display:inline;
+	float:left;
+	margin-left:15px;
+	margin-top:8px;
+}
+
+table.table_features tr td span{
+	display:block;
+	float:left;
+	margin-top:14px;
+	margin-left:8px;
+	font-size:12px;
+	font-weight:bold;
+	color:#525252;	/* strong */
+}
+
+
+/*------------------- End Table Features ----------------------*/
+
+/*-------------------- The Box ----------------------------------*/
+
+.box_top .top_left, .box_bottom .bottom_left{
+	background-image:url('../images/footer_top_left.png');	
+	background-repeat:no-repeat;
+	width:11px;
+	height:11px;
+	float:left;
+}
+
+.box_top .top_right, .box_bottom .bottom_right{
+	background-image:url('../images/footer_top_right.png');
+	background-repeat:no-repeat;
+	width:11px;
+	height:11px;
+	float:left;
+}
+
+.box_bottom .bottom_left{
+	background-image:url('../images/footer_bottom_left.png');
+}
+
+.box_bottom .bottom_right{
+	background-image:url('../images/footer_bottom_right.png');
+}
+
+.box_top .top_center, .box_bottom .bottom_center{
+	background-image:url('../images/footer_strip_top.png');
+	background-repeat:repeat-x;
+	float:left;
+	height:11px;	
+}
+
+.box_bottom{
+	clear:both;
+}
+
+.box_bottom .bottom_center{
+	background-image:url('../images/footer_strip_bottom.png');
+}
+
+.box_middle{
+	clear:both;
+}
+
+.box_middle .middle_left, .box_middle .middle_right{
+	background-image:url('../images/footer_strip_left.png');
+	width:11px;
+	height:100%;
+	background-repeat:repeat-y;
+	float:left;
+}
+
+.box_middle .middle_right{
+	background-image:url('../images/footer_strip_right.png');
+}
+
+.box_middle .middle_center{	
+	height:100%;
+	float:left;
+	text-align:left;
+	background-color:#F8F8F8;
+}
+
+/*-------------------- The Box End -----------------------------*/
+
+
+/*============================= End Theme  Styles =============================*/
+
+
+/*============================= Top Section =============================*/
+
+
+#top_logo{
+	background-image:url('../images/logo.png');
+	background-repeat:no-repeat;
+	width:228px;
+	height:60px;
+	margin-top:21px;
+}
+
+#top_buttons a,#top_buttons div{
+	float:right;
+}
+
+/*--------- Top Buttons --------*/
+
+a.top_button{
+	width:100px;
+	height:26px;
+	text-decoration:none;
+}
+
+a.top_button span{
+	text-align:left;
+	display:block;	
+	padding-top:3px;
+	padding-left:34px;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:12px;	
+}
+
+a#top_button_signup{
+	background-image:url('../images/top_button_yellow.png');
+	background-repeat:no-repeat;
+}
+
+a#top_button_signup:hover{
+	background-image:url('../images/top_button_yellow_over.png');
+	background-repeat:no-repeat;
+}
+
+a#top_button_signup span{
+	background-image:url('../images/top_icon_vi.png');
+	background-repeat:no-repeat;
+	background-position:13px 4px;
+}
+
+a#top_button_login{
+	padding-right:6px;
+	background-image:url('../images/top_button_gray.png');
+	background-repeat:no-repeat;
+}
+
+a#top_button_login:hover{
+	padding-right:6px;
+	background-image:url('../images/top_button_gray_over.png');
+	background-repeat:no-repeat;
+}
+
+a#top_button_login span{
+	background-image:url('../images/top_icon_lock.png');
+	background-repeat:no-repeat;
+	background-position:17px 3px;
+	padding-left:40px;
+}
+
+/*--------- End Top Buttons --------*/
+
+#text_top{
+	padding-right:12px;
+	padding-top:3px;
+}
+
+#top_social{
+	text-align:right;
+	float:right;
+	clear:both;
+	margin-top:30px;	
+}
+
+.social_wrapper a{
+	padding-left:18px;
+	width:16px;
+	height:16px;
+}
+
+/*============================= End Top Section =============================*/
+
+/*============================= Visual Section =============================*/
+
+#visual_section h1{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.visual_buttons{
+	clear:both;
+	padding-top:10px;
+}
+
+.visual_buttons a{
+	float:left;
+}
+
+/*--------- Round Buttons --------*/
+
+.round_button{
+	width:152px;
+	height:34px;
+	text-decoration:none;
+	background-repeat:no-repeat;
+}
+
+a.round_button span{
+	float:left;
+	display:block;	
+	font-family:arial;
+	padding-left:10px;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:12px;
+	padding-top:6px;
+}
+
+a.round_button div{
+	width:16px;
+	height:17px;
+	float:right;
+	margin-right:10px;
+	margin-top:8px;
+	background-repeat:no-repeat;
+}
+
+a.round_button_green{
+	background-image:url('../images/round_button_green.png');
+}
+
+a.round_button_green:hover{
+	background-image:url('../images/round_button_green_over.png');
+}
+
+a.round_button_yellow{
+	background-image:url('../images/round_button_yellow.png');	
+}
+
+a.round_button_yellow:hover{
+	background-image:url('../images/round_button_yellow_over.png');
+}
+
+.round_button_sign_download{
+	background-image:url('../images/green_button_sign.png');
+	background-repeat:no-repeat;
+	height:10px; width:10px; 
+	margin-top:8px; margin-left:18px; 
+}
+
+.round_button_sign_try{
+	background-image:url('../images/yellow_button_sign.png');
+	background-repeat:no-repeat;
+	height:10px; width:10px; 
+	margin-top:8px; margin-left:29px;
+}
+
+/*--------- End Round Buttons --------*/
+
+#button_try{
+	margin-left:23px;
+}
+
+
+/*--------- End Round Buttons --------*/
+
+.visual_left{
+	float:left;
+	width:336px;
+	text-align:left;
+}
+
+.visual_right{
+	float:left;
+	width:619px;
+}
+
+
+
+#banner_frame{
+	width:504px;
+	height:302px;
+	background-image:url('../images/banner_frame.png');
+	text-align:right;
+	float:right;
+}
+
+#banner_frame_screen{
+	width:619px;
+	height:367px;
+	background-image:url('../images/banner_frame_screen.png');
+	float:right;
+}
+
+#banner_frame_screen .banner_inner{
+	margin-left:91px;
+	margin-top:24px;
+	width:436px;
+	height:273px;
+	overflow:hidden;
+	xbackground-color:#000000;
+}
+
+#banner_frame .banner_inner{
+	margin-left:14px;
+	margin-top:13px;
+}
+
+/*============================= End Visual Section =============================*/
+
+/*============================= 3 columns layout =============================*/
+
+	.three_columns_layout .small_screenshot{
+		float:left;
+		margin-right:26px;		
+	}
+	
+	.three_columns_layout p{
+		padding-bottom:16px;
+	}
+	
+/*============================= End 3 columns layout =============================*/
+
+/*============================= Footer =============================*/
+
+
+/* Footer box size */
+
+#footer_middle_height{
+	height:130px;
+}
+
+.footer_center_width{
+	width:933px;
+}
+
+
+#footer div.one_fifth{
+	margin-right:0px;
+	height:100%;
+}
+
+#footer .footer_sap{
+	width:4%;
+	float:left;
+	height:100%;
+	background-image:url('../images/footer_sap.png');
+	background-repeat:repeat-y;
+	background-position:center;
+}
+
+#footer_top	.footer_sap{
+	height:10px;
+	margin-top:1px;
+}
+
+#footer_bottom .footer_sap{
+	height:10px;
+}
+
+#footer .content h3{
+	font-family:tahoma;
+	font-size:11px;
+	font-weight:bold;	
+	padding:0px;
+	margin-bottom:11px;
+	margin-top:5px;
+	margin-left:15px;
+	color:#525252;	/* strong */
+}
+
+#footer .content ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	margin-left:15px;
+}
+
+#footer .content ul li{
+	display:block;
+	padding-bottom:3px;
+	border-bottom:1px solid #e2e2e2;
+	margin-bottom:2px;	
+}
+
+#footer .content ul li.last{
+	border-bottom:none;
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
+
+#footer .content ul li a{
+	text-decoration:none;
+	font-size:11px;
+	font-family:tahoma;
+}
+
+#footer .content ul li a:hover{
+	
+}
+
+/*============================= Footer End =============================*/
+
+/*============================= Footer Line Start =============================*/
+
+#footer_line{
+	clear:both;
+	padding-top:10px;
+	margin-bottom:20px;
+	padding-left:2px;
+	padding-right:2px;
+	
+	font-family:verdana;
+	font-size:11px;
+}
+
+#footer_line a{
+	text-decoration:none;
+	font-family:verdana;
+	font-size:11px;
+	margin-right:6px;
+	margin-left:6px;
+}
+
+#footer_line a.last{
+	margin-right:0px;
+}
+
+
+/*============================= Footer Line End =============================*/
+
+/*============================= Start Contact Form  =============================*/
+
+.contact_form{
+	padding-left:2px;
+}
+
+.contact_form .caption{
+	font-weight:bold;
+	color:#525252;	/* strong */
+	margin-bottom:8px;	
+	margin-top:8px;
+}
+
+.contact_form .field_name{
+	margin-top:4px;
+}
+
+.contact_form input[type="text"],.contact_form textarea{
+	border-width:1px;
+	border-style:solid;
+	border-color:#dddddd;
+	display:block;
+	margin-top:2px;
+	width:200px;
+	color:#525252;	/* strong */
+}
+
+.contact_form textarea{
+	overflow:auto;
+	height:50px;
+}
+
+/*============================= End Contact Form  =============================*/
+
+/*============================= Start Contact Form 1 =============================*/
+
+#box_cf1{
+	float:right;
+}
+
+#contact_form_1{
+	
+}
+
+#cf1_height{
+	height:305px;
+}
+
+.cf1_width{
+	width:206px;
+}
+
+a#cf1_button_send{
+	display:block;
+	background-image:url('../images/cf1_button_send.png');
+	background-repeat:no-repeat;
+	width:90px;
+	height:28px;
+	margin-top:6px;
+	margin-left:112px;
+}
+
+a#cf1_button_send:hover{
+	background-image:url('../images/cf1_button_send_over.png');
+}
+
+.error_text{
+	color:#ff0000;	
+}
+
+#cf1_error_holder{
+	/*height:18px;*/	
+}
+
+#cf1_error_text{
+	
+	font-size: 10px;
+	
+}
+
+#cf1_loader{
+	padding-left:52px;
+}
+
+#cf1_loader_image{
+	width:16px;
+	height:16px;
+	background-image:url('../images/loader.gif');
+	float:left;
+	margin-right:7px;
+	margin-top:4px;
+}
+
+#cf1_loader_text{
+	float:left;
+	font-size:16px;
+}
+
+#cf1_sent{
+	
+	color:#0e8b4d;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	padding-top:100px;
+}
+
+/*============================= End Contact Form 1 =============================*/
+
+.contact_form input[type="text"].field_error{
+	
+	border-color: #ff0000;
+}
+
+
+.title_col{
+	
+	width: 200px;
+	
+}
+
+
+.q_title{
+	font-weight: bold;
+}
+
+
+.twtr-doc{
+
+	border-style: solid;
+	border-color: #D1DCD4;
+	border-width: 1px;
+}
+
+a.green{
+	color:#0e8b4d;
+}
+
+a.green:hover{
+	color:#0e8b4d;
+}
+
+a.green:active{
+	color:#0e8b4d;
+}
+
+a.green:visited{
+	color:#0e8b4d;
+}
+
+a.green:link{
+	color:#0e8b4d;
+}
+
+.install_instructions_img{	
+	margin-top: 20px;	
+}
+
+
+.dep_list{
+	margin-left: 30px;
+}
+
+
