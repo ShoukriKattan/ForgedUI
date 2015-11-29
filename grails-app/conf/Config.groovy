@@ -69,7 +69,7 @@ environments {
         grails.logging.jul.usebridge = false
         grails.serverURL = "http://app.forgedui.com/ForgedUI/"
 		grails.gsp.enable.reload=true
-		forgedui.reports.upload.folder.path="/mnt/software/apache-tomcat-7.0.22/forgedui_reporting"
+		forgedui.reports.upload.folder.path="/apache-tomcat-7.0.22/forgedui_reporting"
     }
 }
 
@@ -123,14 +123,14 @@ grails.plugins.springsecurity.openid.registration.optionalAttributes=[:]
 
 openid.registration.roleNames=['ROLE_USER']
 
-appdirect.oauth.key= 'forgedui-956'//'Dummy'//
-appdirect.oauth.secret='R5sCGdYwxlE7G685'//'secret'//
+appdirect.oauth.key= 'forgedui-dummy'//'Dummy'//
+appdirect.oauth.secret='secret'//'secret'//
 appdirect.events.api.url='https://www.appdirect.com/AppDirect/rest/api/events/'
 
 
 
-forgedui.licensing.sharedkey="fuiSharedShoukry54321"
-forgedui.licensing.serverkey="fuiServerShoukryKing78127"
+forgedui.licensing.sharedkey="keykey"
+forgedui.licensing.serverkey="keykey"
 forgedui.product.update.site.url="http://updates.forgedui.com/update_site/"
 
 
@@ -145,8 +145,8 @@ quartz {
 	grails{mail {
 	  host = "smtp.gmail.com"
 	  port = 465
-	  username = "admin@forgedui.com"
-	  password = "proCAS&M11"
+	  username = "email"
+	  password = "password"
 	  props = ["mail.smtp.auth":"true",
 			   "mail.smtp.socketFactory.port":"465",
 			   "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
